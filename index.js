@@ -8,6 +8,10 @@ const signingSecret = process.env.SIGNING_SECRET || '';
 if(!signingSecret || signingSecret === 'mysigningSecret') {
   console.warn('No signing secret defined! You can define the SIGNING_SECRET in your Heroku settings: https://devcenter.heroku.com/articles/config-vars#using-the-heroku-dashboard');
 }
+else
+{
+  console.log("Hello ", req.body);
+}
 
 // start the express server
 const app = express();
