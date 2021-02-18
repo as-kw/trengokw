@@ -10,7 +10,7 @@ if(!signingSecret || signingSecret === 'mysigningSecret') {
 }
 else
 {
-  console.log("Hello ", req.body);
+  console.log("Hello ");
 }
 
 // start the express server
