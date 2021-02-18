@@ -10,7 +10,7 @@ if(!signingSecret || signingSecret === 'mysigningSecret') {
 }
 else
 {
-  console.log("Hello ");
+  console.log("You code is strting from here");
 }
 
 // start the express server
@@ -39,7 +39,7 @@ app.post("/my-endpoint", (req, res) => {
   const signature = req.header("Trengo-Signature") || '';
   // get raw request body
   const payload = req.rawBody || '';
-
+console.log("verify the signature");
   // verify the signature
   if (verify(payload, signature, signingSecret)) {
     res.send("Valid signature");
