@@ -10,7 +10,7 @@ if(!signingSecret || signingSecret === 'mysigningSecret') {
 }
 else
 {
-  console.log("You code is strting from here");
+  console.log("Your code is strting from here");
 }
 
 // start the express server
